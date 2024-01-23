@@ -8,7 +8,7 @@
 body{
     color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 header{
@@ -27,6 +27,11 @@ header{
     box-sizing: border-box;
 }
 
+.navbar .menu-hamburger {
+    display: block;
+    cursor: pointer;
+    filter: invert(1); 
+}
 .navbar a{
     color: white;
 }
@@ -35,6 +40,7 @@ header{
     font-size: 2em;
     font-weight: bold;
 }
+
 
 .navbar .nav-links ul{
     display: flex;
@@ -65,6 +71,26 @@ header{
     top: 50px;
     right: 50px;
     width: 35px;
+}
+@media screen and (max-width: 600px) {
+    .avis-form textarea {
+        width: 100%;
+    }
+
+    .carrosserie img,
+    .mecanique img {
+        width: 100%;
+        height: auto;
+    }
+
+    td {
+        display: block;
+        text-align: center;
+    }
+
+    .avis-item {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -163,14 +189,56 @@ h3{
     background-color: #581818;
     border-radius: 20px;
 }
-.avis{
+.avis-section {
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(238, 219, 208);
     color: black;
-    border-radius: 0%;
-    border:2px #ffc38c solid;
+    border-radius: 20px;
+    border: 2px #ffc38c solid;
 }
- .note{
+
+.avis-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avis-form textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.avis-form button {
+    background-color: #581818;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.avis-form button:hover {
+    background-color: #a33737;
+}
+
+.avis-list {
+    margin-top: 20px;
+}
+
+.avis-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.note{
     margin-top: -20px;
- }
+}

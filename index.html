@@ -33,6 +33,30 @@
         menuHamburger.addEventListener('click', () => {
             navLinks.classList.toggle('mobile-menu');
         });
+
+      
+        let avis = [];
+
+        function ajouterAvis() {
+            const note = document.getElementById("note").value;
+            const commentaire = document.getElementById("commentaire").value;
+
+            avis.push({ note, commentaire });
+
+            afficherAvis();
+        }
+
+        function afficherAvis() {
+            const listeAvisDiv = document.getElementById("listeAvis");
+            listeAvisDiv.innerHTML = "";
+
+            avis.forEach(avis => {
+                const avisDiv = document.createElement("div");
+                avisDiv.innerHTML = `<img class="note" src="evaluation.png" alt="${avis.note} étoiles" width="70" height="70">
+                                     ${avis.commentaire}`;
+                listeAvisDiv.appendChild(avisDiv);
+            });
+        }
     </script>
 
     <div class="content">
@@ -47,10 +71,6 @@
         Bien à vous,</p>
         <p>Directeur, V.Parrot Garage Auto</p>
 
-
-        <img class="integration" src="roue.jpeg" alt="roue">
-
-        
         
         <table>
             <tr>
@@ -68,6 +88,7 @@
         
         <table>
             <tr>
+                
                 <td>
                     <h3>Service Mécanique</h3>
                     <p>
@@ -88,9 +109,35 @@
             Vendredi: 09h00-12h00/13h00-17h00<br>
             Samedi: 09h00 - 18h00<br>
             Dimanche : Fermé</p>
-            </div>
+        </div>
 
-        <!-- Contenu existant -->
+      
+        <div class="avis-section">
+            <h3>Avis clients</h3>
+            <p>Nos clients recommandent</p>
+            <div id="listeAvis"></div>
+        </div>
+
+       
+        <div class="avis-section">
+            <h3>Laissez votre avis</h3>
+            <form id="avisForm">
+                <label for="note">Note:</label>
+                <select id="note" name="note" required>
+                    <option value="5">5 étoiles</option>
+                    <option value="4">4 étoiles</option>
+                    <option value="3">3 étoiles</option>
+                    <option value="2">2 étoiles</option>
+                    <option value="1">1 étoile</option>
+                </select>
+                <br>
+                <label for="commentaire">Commentaire:</label>
+                <textarea id="commentaire" name="commentaire" rows="4" required></textarea>
+                <br>
+                <button type="button" onclick="ajouterAvis()">Ajouter l'avis</button>
+            </form>
+        </div>
+
         <footer><p>© 2024 V.Parrot Garage Auto. Tous droits réservés</p></footer>
     </div>
 </body>
