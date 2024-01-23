@@ -242,3 +242,32 @@ h3{
 .note{
     margin-top: -20px;
 }
+
+/* Ajoutez ces styles à votre fichier CSS */
+
+.avis {
+    margin: 20px 0;
+    padding: 15px;
+    border: 2px solid #6e0707;
+    background-color: rgb(80, 21, 21);
+    border-radius: 10px;
+}
+
+.note {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.etoile {
+    font-size: 1.5em;
+    color: #9e4c00;
+}
+
+.etoile.pleine::before {
+    content: "\2605"; /* Étoile pleine en Unicode */
+}
+
+.etoile.vide::before {
+    content: "\2606"; /* Étoile vide en Unicode */
+}
