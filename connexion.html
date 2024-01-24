@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img class="logo" src="garage blanc.png" width="100" height="100"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="carrosserie.html">Carrosserie</a></li>
+                    <li><a href="mecanique.html">Mécanique</a></li>
+                    <li><a href="lesvoituresdoccasion.html">Les voiture d'occasion</a></li>
+                    <li><a href="lesavis.html">Les avis</a></li>
+                    <li><a href="nous contacter.html">Nous contacter</a></li>
+                    <li class="button"><a href="connexion.html">Connexion</a></li>
+                </ul>
+            </div>
+            <img src="burger noir.png" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>Connexion</h2>
+        <form id="loginForm">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="button" onclick="connexion()">Se Connecter</button>
+        </form>
+    </div>
+
+    <footer><p>© 2024 V.Parrot Garage Auto. Tous droits réservés</p></footer>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger");
+        const navLinks = document.querySelector(".nav-links");
+    
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+    </script>
+    <script src="connexion.js"></script>
+</body>
+</html>
