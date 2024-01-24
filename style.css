@@ -307,7 +307,7 @@ h3{
     background-color: #555;
 }
 
-/* Styles pour le formulaire d'avis */
+
 .avis-section {
     margin-top: 20px;
 }
@@ -365,7 +365,56 @@ h3{
     text-align: center;
 }
 
+.content {
+    max-width: 400px;
+    margin: 40px auto 0; 
+    background-color: #380808; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: #e74c3c; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    padding: 6px 10px; 
+    font-size: 14px;
+    background-color: #c0392b; 
+    margin-left: 8px;
+}
+
+button:hover {
+    background-color: #d9534f; 
+}
+
+footer {
+    margin-top: 20px;
+}
 
 @media screen and (max-width: 1200px) {
     .vehicule-card {
@@ -378,3 +427,4 @@ h3{
         width: 100%; 
     }
 }
+
