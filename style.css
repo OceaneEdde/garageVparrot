@@ -243,7 +243,7 @@ h3{
     margin-top: -20px;
 }
 
-/* Ajoutez ces styles à votre fichier CSS */
+
 
 .avis {
     margin: 20px 0;
@@ -265,9 +265,90 @@ h3{
 }
 
 .etoile.pleine::before {
-    content: "\2605"; /* Étoile pleine en Unicode */
+    content: "\2605"; 
 }
 
 .etoile.vide::before {
-    content: "\2606"; /* Étoile vide en Unicode */
+    content: "\2606"; 
+}
+
+/* Styles pour le formulaire de prise de rendez-vous */
+.rendez-vous-section {
+    margin-top: 20px;
+}
+
+.rendez-vous-section form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.rendez-vous-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rendez-vous-section input,
+.rendez-vous-section textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.rendez-vous-section button {
+    background-color: #310b0b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.rendez-vous-section button:hover {
+    background-color: #555;
+}
+
+/* Styles pour le formulaire d'avis */
+.avis-section {
+    margin-top: 20px;
+}
+
+.avis-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.avis-section form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.avis-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.avis-section select,
+.avis-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.avis-section button {
+    background-color: #361717;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.avis-section button:hover {
+    background-color: #555;
+}
+
+.service-details img {
+    display: block;
+    margin: 0 auto;
 }
