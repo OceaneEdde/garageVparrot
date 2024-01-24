@@ -114,18 +114,18 @@
         menuHamburger.addEventListener('click', () => {
             navLinks.classList.toggle('mobile-menu');
         });
-        
+
         function demanderInformation(nomVehicule) {
-            // Afficher le formulaire modal
+            
             document.getElementById('overlay').style.display = 'block';
         }
 
         function fermerModal() {
-            // Fermer le formulaire modal
+           
             document.getElementById('overlay').style.display = 'none';
         }
 
-        // Logique pour soumettre le formulaire (à adapter selon vos besoins)
+        
         document.getElementById('demandeForm').addEventListener('submit', function (event) {
             event.preventDefault();
             alert('Formulaire soumis avec succès!');
