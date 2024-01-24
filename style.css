@@ -272,7 +272,7 @@ h3{
     content: "\2606"; 
 }
 
-/* Styles pour le formulaire de prise de rendez-vous */
+
 .rendez-vous-section {
     margin-top: 20px;
 }
@@ -351,4 +351,30 @@ h3{
 .service-details img {
     display: block;
     margin: 0 auto;
+}
+
+
+.vehicules-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.vehicule-card {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .vehicule-card {
+        width: 45%; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vehicule-card {
+        width: 100%; 
+    }
 }

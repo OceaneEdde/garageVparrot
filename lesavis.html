@@ -17,7 +17,7 @@
                     <li><a href="carrosserie.html">Carrosserie</a></li>
                     <li><a href="mecanique.html">Mécanique</a></li>
                     <li><a href="lesvoituresdoccasion.html">Les voiture d'occasion</a></li>
-                    <li><a href="lesavis.html">Les avis</a></li>
+                    <li class="active"><a href="lesavis.html">Les avis</a></li>
                     <li><a href="nous contacter.html">Nous contacter</a></li>
                     <li class="button"><a href="connexion.html">Connexion</a></li>
                 </ul>
@@ -64,7 +64,14 @@
 
 
     </div>
+    <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".nav-links");
 
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu');
+    });
+</script>
     <footer>
         <p>© 2024 V.Parrot Garage Auto. Tous droits réservés</p>
     </footer>

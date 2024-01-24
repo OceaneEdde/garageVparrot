@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les voitures d'occasion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img class="logo" src="garage blanc.png" width="100" height="100"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="carrosserie.html">Carrosserie</a></li>
+                    <li><a href="mecanique.html">Mécanique</a></li>
+                    <li class="active"><a href="vehicules.html">Les voiture d'occasion</a></li>
+                    <li><a href="lesavis.html">Les avis</a></li>
+                    <li><a href="nous contacter.html">Nous contacter</a></li>
+                    <li class="button"><a href="connexion.html">Connexion</a></li>
+                </ul>
+            </div>
+            <img src="burger noir.png" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+
+    <div class="content vehicules-section">
+        <h2>Nos Véhicules</h2>
+
+        <div class="filter-section">
+            <label for="filtre">Filtrer par:</label>
+            <select id="filtre">
+                <option value="tous">Tous les véhicules</option>
+                <option value="Prixcroissant">Ordre par prix croissant</option>
+                <option value="Prixdecroissant">Ordre par prix décroissant</option>
+                <option value="Année+">+2010</option>
+                <option value="Année-">-2010</option>
+                <option value="SUV">SUV</option>
+                <option value="Berline">Berline</option>
+                <option value="Coupée">Coupée</option>
+                <option value="Compact">Compact</option>
+            </select>
+        </div>
+
+        <div class="vehicule-card">
+            <img src="vehicule2.jpg" alt="Véhicule 2" height="200" width="300">
+            <h3>Véhicule 1</h3>
+            <p>Description du véhicule 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button onclick="demanderInformation('Véhicule 1')">Demander plus d'informations</button>
+        </div>
+
+        <div class="vehicule-card">
+            <img src="vehicule2.jpg" alt="Véhicule 2" height="200" width="300">
+            <h3>Véhicule 2</h3>
+            <p>Description du véhicule 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button onclick="demanderInformation('Véhicule 2')">Demander plus d'informations</button>
+        </div>
+
+    
+        <div class="vehicule-card">
+            <img src="vehicule2.jpg" alt="Véhicule 2" height="200" width="300">
+            <h3>Véhicule 2</h3>
+            <p>Description du véhicule 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button onclick="demanderInformation('Véhicule 2')">Demander plus d'informations</button>
+        </div>
+
+        
+        <div class="vehicule-card">
+            <img src="vehicule2.jpg" alt="Véhicule 2" height="200" width="300">
+            <h3>Véhicule 2</h3>
+            <p>Description du véhicule 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button onclick="demanderInformation('Véhicule 2')">Demander plus d'informations</button>
+        </div>
+
+        
+        <div class="vehicule-card">
+            <img src="vehicule2.jpg" alt="Véhicule 2" height="200" width="300">
+            <h3>Véhicule 2</h3>
+            <p>Description du véhicule 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button onclick="demanderInformation('Véhicule 2')">Demander plus d'informations</button>
+        </div>
+
+        <div class="vehicule-card">
+            <img src="vehicule2.jpg" alt="Véhicule 2" height="200" width="300">
+            <h3>Véhicule 2</h3>
+            <p>Description du véhicule 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button onclick="demanderInformation('Véhicule 2')">Demander plus d'informations</button>
+        </div>
+
+        <div class="vehicule-card">
+            <img src="vehicule2.jpg" alt="Véhicule 2" height="200" width="300">
+            <h3>Véhicule 2</h3>
+            <p>Description du véhicule 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button onclick="demanderInformation('Véhicule 2')">Demander plus d'informations</button>
+        </div>
+
+        <div class="vehicule-card">
+            <img src="vehicule2.jpg" alt="Véhicule 2" height="200" width="300">
+            <h3>Véhicule 2</h3>
+            <p>Description du véhicule 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button onclick="demanderInformation('Véhicule 2')">Demander plus d'informations</button>
+        </div>
+    </div>
+
+    <footer><p>© 2024 V.Parrot Garage Auto. Tous droits réservés</p></footer>
+
+    <script>
+         const menuHamburger = document.querySelector(".menu-hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+        
+        function demanderInformation(nomVehicule) {
+            // Afficher le formulaire modal
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function fermerModal() {
+            // Fermer le formulaire modal
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        // Logique pour soumettre le formulaire (à adapter selon vos besoins)
+        document.getElementById('demandeForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Formulaire soumis avec succès!');
+            fermerModal();
+        });
+    </script>
+
+</body>
+</html>
