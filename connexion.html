@@ -10,15 +10,15 @@
 
     <header>
         <nav class="navbar">
-            <a href="#" class="logo"><img class="logo" src="garage blanc.png" width="100" height="100"></a>
+            <a href="#" class="logo"><img class="logo" src="garage blanc.png" width="100" height="100" alt="Logo Garage"></a>
             <div class="nav-links">
                 <ul>
                     <li><a href="accueil.html">Accueil</a></li>
                     <li><a href="carrosserie.html">Carrosserie</a></li>
                     <li><a href="mecanique.html">Mécanique</a></li>
-                    <li><a href="lesvoituresdoccasion.html">Les voiture d'occasion</a></li>
+                    <li><a href="lesvoituresdoccasion.html">Les voitures d'occasion</a></li>
                     <li><a href="lesavis.html">Les avis</a></li>
-                    <li><a href="nous contacter.html">Nous contacter</a></li>
+                    <li><a href="nous_contacter.html">Nous contacter</a></li>
                     <li class="button"><a href="connexion.html">Connexion</a></li>
                 </ul>
             </div>
@@ -40,10 +40,11 @@
     </div>
 
     <footer><p>© 2024 V.Parrot Garage Auto. Tous droits réservés</p></footer>
+
     <script>
         const menuHamburger = document.querySelector(".menu-hamburger");
         const navLinks = document.querySelector(".nav-links");
-    
+
         menuHamburger.addEventListener('click', () => {
             navLinks.classList.toggle('mobile-menu');
         });

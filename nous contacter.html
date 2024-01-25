@@ -8,22 +8,23 @@
 </head>
 <body>
 
-    
     <header>
         <nav class="navbar">
-            <a href="#" class="logo"><img class="logo" src="garage blanc.png" width="100" height="100"></a>
+            <a href="#" class="logo">
+                <img class="logo" src="garage-blanc.png" width="100" height="100" alt="Logo du garage">
+            </a>
             <div class="nav-links">
                 <ul>
                     <li><a href="accueil.html">Accueil</a></li>
                     <li><a href="carrosserie.html">Carrosserie</a></li>
                     <li><a href="mecanique.html">Mécanique</a></li>
-                    <li><a href="vehicules.html">Les voiture d'occasion</a></li>
+                    <li><a href="vehicules.html">Les voitures d'occasion</a></li>
                     <li><a href="lesavis.html">Les avis</a></li>
-                    <li class="active"><a href="nous contacter.html">Nous contacter</a></li>
+                    <li class="active"><a href="nous-contacter.html">Nous contacter</a></li>
                     <li class="button"><a href="connexion.html">Connexion</a></li>
                 </ul>
             </div>
-            <img src="burger noir.png" alt="menu hamburger" class="menu-hamburger">
+            <img src="burger-noir.png" alt="menu hamburger" class="menu-hamburger">
         </nav>
     </header>
 
@@ -55,15 +56,18 @@
         Samedi: 09h00 - 18h00<br>
         Dimanche : Fermé</p>
     </div>
-    
-    <footer><p>© 2024 V.Parrot Garage Auto. Tous droits réservés</p></footer>
+
+    <footer>
+        <p>© 2024 V.Parrot Garage Auto. Tous droits réservés</p>
+    </footer>
+
     <script>
         const menuHamburger = document.querySelector(".menu-hamburger");
-       const navLinks = document.querySelector(".nav-links");
+        const navLinks = document.querySelector(".nav-links");
 
-       menuHamburger.addEventListener('click', () => {
-           navLinks.classList.toggle('mobile-menu');
-       });
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
     </script>
 
 </body>

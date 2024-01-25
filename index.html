@@ -10,7 +10,7 @@
 
     <header>
         <nav class="navbar">
-            <a href="#" class="logo"><img class="logo" src="garage blanc.png" width="100" height="100"></a>
+            <a href="index.html" class="logo"><img src="garage blanc.png" width="100" height="100"></a>
             <div class="nav-links">
                 <ul>
                     <li class="active"><a href="accueil.html">Accueil</a></li>
@@ -81,7 +81,9 @@
                     <p>
                         Redonnez à votre véhicule son allure d'origine avec les services de carrosserie de V.Parrot Garage Auto. Notre équipe dédiée de carrossiers experts s'engage à traiter tout, des petites éraflures aux réparations complexes après un accident. Offrez à votre voiture une seconde jeunesse avec notre expertise en restauration esthétique et structurelle.
                     </p>
-                    <li class="active"><a href="carrosserie.html">Service Carrosserie</a></li>
+                    <ul>
+                        <li class="active"><a href="carrosserie.html">Service Carrosserie</a></li>
+                    </ul>
                 </td>
             </tr>
         </table>
@@ -94,24 +96,14 @@
                     <p>
                         Chez V.Parrot Garage Auto, nos services mécaniques vont au-delà de l'entretien routinier. Nos techniciens expérimentés veillent à la santé de votre véhicule en proposant des diagnostics avancés, des réparations efficaces, et un entretien préventif. Faites-nous confiance pour maintenir votre voiture en excellent état de fonctionnement.
                     </p>
-                    <li class="active"><a href="mecanique.html">Service Mécanique</a></li>
+                    <ul>
+                        <li class="active"><a href="mecanique.html">Service Mécanique</a></li>
+                    </ul>
                 </td>
                 <td><img class="mecanique" src="mecanique.jpeg" alt="mecanique" height="200" width="250"></td>
             </tr>
         </table>
 
-        <div class="horaire">
-            <h3>Nos horaires</h3>
-            <p>Lundi: Fermé<br>
-            Mardi: 09h00-12h00/13h00-17h00<br>
-            Mercredi: 09h00-12h30<br>
-            Jeudi: 09h00-12h00/13h00-17h00<br>
-            Vendredi: 09h00-12h00/13h00-17h00<br>
-            Samedi: 09h00 - 18h00<br>
-            Dimanche : Fermé</p>
-        </div>
-
-      
         <div class="avis-section">
             <h3>Avis clients</h3>
             <p>Nos clients recommandent</p>
@@ -121,7 +113,7 @@
        
         <div class="avis-section">
             <h3>Laissez votre avis</h3>
-            <form id="avisForm">
+            <form id="avisForm" action="#">
                 <label for="note">Note:</label>
                 <select id="note" name="note" required>
                     <option value="5">5 étoiles</option>
@@ -137,6 +129,7 @@
                 <button type="button" onclick="ajouterAvis()">Ajouter l'avis</button>
             </form>
         </div>
+
         <div class="horaire">
             <h3>Nos horaires</h3>
             <p>Lundi: Fermé<br>
@@ -147,7 +140,7 @@
             Samedi: 09h00 - 18h00<br>
             Dimanche : Fermé</p>
         </div>
-        
+
         <footer><p>© 2024 V.Parrot Garage Auto. Tous droits réservés</p></footer>
     
 </body>

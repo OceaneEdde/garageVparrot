@@ -1,23 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
 }
 
-body{
+body {
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(0, 0, 0);
 }
 
-header{
+header {
     height: 20vh;
     width: 100vw;
     background-color: black;
 }
 
-.navbar{
+.navbar {
     position: absolute;
     padding: 50px;
     display: flex;
@@ -30,48 +30,47 @@ header{
 .navbar .menu-hamburger {
     display: block;
     cursor: pointer;
-    filter: invert(1); 
+    filter: invert(1);
 }
-.navbar a{
+
+.navbar a {
     color: white;
 }
 
-.navbar .logo{
+.navbar .logo {
     font-size: 2em;
     font-weight: bold;
 }
 
-
-.navbar .nav-links ul{
+.navbar .nav-links ul {
     display: flex;
-    
 }
 
-.navbar .nav-links ul li{
+.navbar .nav-links ul li {
     margin: 0 25px;
-    
 }
 
-.navbar .nav-links .button{
+.navbar .nav-links .button {
     background-color: #581818;
     border-radius: 20px;
-    padding:  10px;
+    padding: 10px;
     margin: -10px 25px;
 }
 
-.navbar .nav-links ul li.active a{
+.navbar .nav-links ul li.active a {
     margin: 25px;
     color: #a33737;
     font-size: 600;
 }
 
-.navbar .menu-hamburger{
+.navbar .menu-hamburger {
     display: none;
     position: absolute;
     top: 50px;
     right: 50px;
     width: 35px;
 }
+
 @media screen and (max-width: 600px) {
     .avis-form textarea {
         width: 100%;
@@ -93,23 +92,22 @@ header{
     }
 }
 
-@media screen and (max-width:900px) {
-
-    .navbar{
+@media screen and (max-width: 900px) {
+    .navbar {
         padding: 0;
     }
 
-    .navbar .logo{
-        position:absolute;
+    .navbar .logo {
+        position: absolute;
         top: 10px;
         left: 10px;
     }
 
-    .navbar .menu-hamburger{
+    .navbar .menu-hamburger {
         display: block;
     }
 
-    .nav-links{
+    .nav-links {
         top: 0;
         left: 0;
         position: absolute;
@@ -119,54 +117,53 @@ header{
         display: flex;
         justify-content: left;
         align-items: center;
-        margin-left:-100% ;
+        margin-left: -100%;
         transition: all 0.5s ease;
     }
 
-    .nav-links.mobile-menu{
+    .nav-links.mobile-menu {
         margin-top: 170px;
-        margin-left:0 ;
+        margin-left: 0;
     }
 
-    .nav-links ul{
+    .nav-links ul {
         display: flex;
         flex-direction: column;
     }
 
-    .navbar .nav-links ul li{
+    .navbar .nav-links ul li {
         margin: 25px;
-        font-size: 1.2em;   
+        font-size: 1.2em;
     }
 
-    .navbar .nav-links .button{
+    .navbar .nav-links .button {
         margin: 25px;
-        padding: 10px ;
+        padding: 10px;
         background-color: #581818;
         border-radius: 20px;
         text-align: center;
     }
-    
 }
 
-h2{
+h2 {
     margin: 20px;
     padding: 20px;
     text-align: center;
 }
 
-p{
+p {
     margin: 20px;
     padding: 20px;
     text-align: center;
 }
 
-.integration{
+.integration {
     margin-top: 100px;
     height: 50%;
     width: 100%;
 }
 
-td{
+td {
     padding-top: 0%;
 }
 
@@ -176,20 +173,19 @@ td{
     max-width: 100%;
 }
 
-
-
-h3{
+h3 {
     margin: 20px;
     padding: 20px;
     text-align: center;
 }
 
-.horaire{
-    margin:20px;
+.horaire {
+    margin: 20px;
     padding: 5px;
     background-color: #581818;
     border-radius: 20px;
 }
+
 .avis-section {
     margin: 20px;
     padding: 20px;
@@ -240,10 +236,6 @@ h3{
     border-radius: 5px;
 }
 
-
-
-
-
 .avis {
     margin: 20px 0;
     padding: 15px;
@@ -264,13 +256,12 @@ h3{
 }
 
 .etoile.pleine::before {
-    content: "\2605"; 
+    content: "\2605";
 }
 
 .etoile.vide::before {
-    content: "\2606"; 
+    content: "\2606";
 }
-
 
 .rendez-vous-section {
     margin-top: 20px;
@@ -306,11 +297,9 @@ h3{
     background-color: #555;
 }
 
-
 .avis-section {
     margin-top: 20px;
     padding-right: 5px;
-
 }
 
 .avis-section h3 {
@@ -328,7 +317,8 @@ h3{
     margin-bottom: 5px;
 }
 
-.avis-section select .avis-section textarea {
+.avis-section select,
+.avis-section textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -353,7 +343,6 @@ h3{
     margin: 0 auto;
 }
 
-
 .vehicules-section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -367,8 +356,8 @@ h3{
 
 .contentform {
     max-width: 400px;
-    margin: 40px auto 0; 
-    background-color: #380808; 
+    margin: 40px auto 0;
+    background-color: #380808;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -394,7 +383,7 @@ textarea {
 button {
     padding: 6px 10px;
     font-size: 14px;
-    background-color: #e74c3c; 
+    background-color: #e74c3c;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -402,16 +391,16 @@ button {
 }
 
 button[type="reset"] {
-    padding: 6px 10px; 
+    padding: 6px 10px;
     font-size: 14px;
-    background-color: #724641; 
+    background-color: #724641;
     margin-left: 8px;
     margin-right: 8px;
     margin-top: 5px;
 }
 
 button:hover {
-    background-color: #d9534f; 
+    background-color: #d9534f;
 }
 
 footer {
@@ -420,13 +409,79 @@ footer {
 
 @media screen and (max-width: 1200px) {
     .vehicule-card {
-        width: 45%; 
+        width: 45%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .vehicule-card {
-        width: 100%; 
+        width: 100%;
     }
 }
 
+.filter-section {
+    margin-bottom: 20px;
+}
+
+label[for="filtre"] {
+    margin-right: 10px;
+}
+
+#filtre {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.vehicules-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.vehicule-card {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.vehicule-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.vehicule-card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.vehicule-card p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.vehicule-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.vehicule-card:nth-child(odd) {
+    background-color: #380808; 
+}
+
+.vehicule-card:nth-child(even) {
+    background-color: #380808;
+}
+
+@media (min-width: 600px) {
+    .vehicules-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
