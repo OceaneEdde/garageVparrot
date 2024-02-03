@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-03T11:27:08.253Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="J56fghIQQP1uZtB3D_Lg" version="23.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-03T11:29:29.777Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="oUL3s8S7BfLIXnq3ZXjB" version="23.1.1" type="github">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
     <mxGraphModel dx="6187" dy="2957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
@@ -206,7 +206,7 @@
             <mxPoint x="1490.000000000001" y="559.9999999999995" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BDkqgorOBAQP8SgrjzIR-32" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 30px;&quot;&gt;Filtrer par ages&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BDkqgorOBAQP8SgrjzIR-32" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 30px;&quot;&gt;Filtrer par dates&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1370" y="363" width="240" height="100" as="geometry" />
         </mxCell>
         <mxCell id="BDkqgorOBAQP8SgrjzIR-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BDkqgorOBAQP8SgrjzIR-33" target="BDkqgorOBAQP8SgrjzIR-34">
@@ -224,7 +224,7 @@
         <mxCell id="BDkqgorOBAQP8SgrjzIR-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BDkqgorOBAQP8SgrjzIR-35" target="BDkqgorOBAQP8SgrjzIR-34">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BDkqgorOBAQP8SgrjzIR-35" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 30px;&quot;&gt;Filtrer par style&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BDkqgorOBAQP8SgrjzIR-35" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 30px;&quot;&gt;Filtrer par styles&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1633" y="360" width="240" height="100" as="geometry" />
         </mxCell>
         <mxCell id="BDkqgorOBAQP8SgrjzIR-45" value="&lt;span style=&quot;font-size: 30px;&quot;&gt;&lt;b&gt;Consulter les horaires&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
