@@ -345,8 +345,8 @@ h3 {
 
 .vehicules-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    justify-content: flex-end; 
 }
 
 .vehicule-card {
@@ -357,9 +357,6 @@ h3 {
     background-color: #380808;
     margin-bottom: 20px; 
     max-width: 300px; 
-    margin-left: auto; 
-    margin-right: auto; 
-    justify-content: center;
 }
 
 .contentform {
