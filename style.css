@@ -410,12 +410,14 @@ footer {
 @media screen and (max-width: 1200px) {
     .vehicule-card {
         width: 45%;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 768px) {
     .vehicule-card {
         width: 100%;
+        justify-content: center;
     }
 }
 
