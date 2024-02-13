@@ -366,7 +366,6 @@ h3 {
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 label {
@@ -538,34 +537,4 @@ label[for="filtre"] {
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
-
-@media (min-width: 600px) {
-    .vehicules-section {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(300px, 1fr)); 
-        justify-content: center; 
-        gap: 20px; 
-        padding: 0 20px; /
-        margin: 0 auto; /
-    }
-}
-
-@media (max-width: 600px) {
-    .vehicules-section {
-        display: block; 
-        text-align: center; 
-        padding: 0 20px; 
-        margin: 0 auto; 
-    }
-}
-
-.vehicule-card {
-    width: 100%;
-    text-align: center;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #380808;
-
-   
 }
