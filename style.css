@@ -366,6 +366,7 @@ h3 {
 form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 label {
