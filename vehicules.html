@@ -126,6 +126,22 @@
         <p>© 2024 V.Parrot Garage Auto. Tous droits réservés</p>
     </footer>
 
+    <div id="overlay" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fermerModal()">&times;</span>
+            <h2>Demande d'informations</h2>
+            <form id="demandeForm">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+   
     <script>
         const menuHamburger = document.querySelector(".menu-hamburger");
         const navLinks = document.querySelector(".nav-links");
@@ -148,6 +164,7 @@
             fermerModal();
         });
     </script>
+
 
 </body>
 
