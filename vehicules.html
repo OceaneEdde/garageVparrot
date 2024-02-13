@@ -35,8 +35,6 @@
         <label for="filtre">Filtrer par:</label>
         <select id="filtre">
             <option value="tous">Tous les véhicules</option>
-            <option value="Prixcroissant">Ordre par prix croissant</option>
-            <option value="Prixdecroissant">Ordre par prix décroissant</option>
             <option value="Année+">+2010</option>
             <option value="Année-">-2010</option>
             <option value="SUV">SUV</option>
@@ -44,12 +42,17 @@
             <option value="Coupée">Coupée</option>
             <option value="Compact">Compact</option>
         </select>
+        <label for="prix-min">Prix min:</label>
+        <input type="number" id="prix-min" min="0">
+        <label for="prix-max">Prix max:</label>
+        <input type="number" id="prix-max" min="0">
+        <button onclick="appliquerFiltres()">Appliquer</button>
     </div>
 
     <div class="vehicules-section" id="vehicules-section">
 
         <div class="content vehicules-section" id="vehicules-section">
-        <div class="vehicule-card" data-categorie="Berline">
+        <div class="vehicule-card" data-categorie="Berline" data-prix="63500">
             <img src="alfa-romeo-giulia.jpg" alt="alfa-romeo-giulia" height="200" width="300">
             <h3>Alfa Romeo Giulia</h3>
             <p>Alfa Romeo Guilia 2023 210cv 1200km</p>
@@ -57,7 +60,7 @@
             <button onclick="demanderInformation('alfa-romeo-giulia')">Demander plus d'informations</button>
         </div>
 
-        <div  class="vehicule-card" data-categorie="Coupée">
+        <div  class="vehicule-card" data-categorie="Coupée" data-prix="34900">
             <img src="nissan370z.jpg" alt="nissan370z" height="200" width="300">
             <h3>Nissan 370z</h3>
             <p>Nissan 370z 2014 328cv 138000km</p>
@@ -65,7 +68,7 @@
             <button onclick="demanderInformation('nissan370z')">Demander plus d'informations</button>
         </div>
 
-        <div  class="vehicule-card" data-categorie="SUV">
+        <div  class="vehicule-card" data-categorie="SUV" data-prix="14900">
             <img src="mercedesml.jpg" alt="mercedesml" height="200" width="300">
             <h3>Mercedes ML</h3>
             <p>Mercedes ML 320 CDI 2010 224cv 138000km.</p>
@@ -73,7 +76,7 @@
             <button onclick="demanderInformation('mercedesml')">Demander plus d'informations</button>
         </div>
 
-        <div class="vehicule-card" data-categorie="Berline">
+        <div class="vehicule-card" data-categorie="Berline" data-prix="13900">
             <img src="audia1.jpg" alt="audia1" height="200" width="300">
             <h3>Audi A1</h3>
             <p>Audi a1 130cv 2013 93000km</p>
@@ -81,7 +84,7 @@
             <button onclick="demanderInformation('audia1')">Demander plus d'informations</button>
         </div>
 
-        <div  class="vehicule-card" data-categorie="Coupée">
+        <div  class="vehicule-card" data-categorie="Coupée" data-prix="69800">
             <img src="alfaromeo4c.jpg" alt="alfaromeo4c" height="200" width="300">
             <h3>Alfa romeo 4c</h3>
             <p>Alfa romeo 4c 2021 240cv 52000km.</p>
@@ -89,7 +92,7 @@
             <button onclick="demanderInformation('alfaromeo4c')">Demander plus d'informations</button>
         </div>
 
-        <div  class="vehicule-card" data-categorie="SUV">
+        <div  class="vehicule-card" data-categorie="SUV" data-prix="53500">
             <img src="jeepgrandcherokee.jpg" alt="jeepgrandcherokee" height="200" width="300">
             <h3>Jeep Grand cherokee</h3>
             <p>Jeep grand Cherokee 2018 250cv 61000km.</p>
@@ -97,7 +100,7 @@
             <button onclick="demanderInformation('jeepgrandcherokee')">Demander plus d'informations</button>
         </div>
 
-        <div  class="vehicule-card" data-categorie="Berline">
+        <div  class="vehicule-card" data-categorie="Berline" data-prix="155800">
             <img src="mercedesamggt.jpg" alt="mercedesamggt" height="200" width="300">
             <h3>Mercedes AMG GT</h3>
             <p>Mercedes AMG GT 2020 476cv 15000km.</p>
@@ -105,7 +108,7 @@
             <button onclick="demanderInformation('mercedesamggt')">Demander plus d'informations</button>
         </div>
 
-        <div  class="vehicule-card" data-categorie="Berline">
+        <div  class="vehicule-card" data-categorie="Berline" data-prix="62800">
             <img src="audia8.jpg" alt="audia8" height="200" width="300">
             <h3>Audi A8</h3>
             <p>Audi A8 2016 310cv 183000km.</p>
@@ -113,7 +116,7 @@
             <button onclick="demanderInformation('audia8')">Demander plus d'informations</button>
         </div>
 
-        <div  class="vehicule-card" data-categorie="Berline">
+        <div  class="vehicule-card" data-categorie="Berline" data-prix="22500">
             <img src="mercedesclassea.jpg" alt="mercedesclassea" height="200" width="300">
             <h3>Mercedes classe A</h3>
             <p>Mercedes classe A 170cv 2016 76000km</p>
@@ -178,21 +181,32 @@
 
     
 const filtreSelect = document.getElementById('filtre');
+const prixMinInput = document.getElementById('prix-min');
+const prixMaxInput = document.getElementById('prix-max');
 const vehiculesSection = document.getElementById('vehicules-section');
 const vehiculesCards = vehiculesSection.querySelectorAll('.vehicule-card');
 
-function filtrerVehicules() {
+function appliquerFiltres() {
     const filtre = filtreSelect.value;
+    const prixMin = prixMinInput.value ? parseInt(prixMinInput.value) : 0;
+    const prixMax = prixMaxInput.value ? parseInt(prixMaxInput.value) : Number.MAX_SAFE_INTEGER;
     vehiculesCards.forEach(card => {
         const categorie = card.getAttribute('data-categorie');
-        card.style.display = (filtre === 'tous' || filtre === categorie) ? 'block' : 'none';
+        const prix = parseInt(card.getAttribute('data-prix'));
+        const annee = parseInt(card.querySelector('p').innerText.match(/\d{4}/)[0]);
+        card.style.display = (filtre === 'tous' || filtre === categorie) &&
+            (prix >= prixMin && prix <= prixMax) &&
+            (filtre !== 'Année+' || annee > 2010) &&
+            (filtre !== 'Année-' || annee <= 2010)
+            ? 'block' : 'none';
     });
 }
 
+filtreSelect.addEventListener('change', appliquerFiltres);
+prixMinInput.addEventListener('input', appliquerFiltres);
+prixMaxInput.addEventListener('input', appliquerFiltres);
 
-filtreSelect.addEventListener('change', filtrerVehicules);
-
-filtrerVehicules();
+appliquerFiltres();
 
 
     </script>
@@ -201,3 +215,4 @@ filtrerVehicules();
 </body>
 
 </html>
+
