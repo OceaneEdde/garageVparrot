@@ -540,7 +540,7 @@ label[for="filtre"] {
     cursor: pointer;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
     .vehicules-section {
         display: grid;
         grid-template-columns: repeat(3, minmax(300px, 1fr)); 
@@ -551,7 +551,7 @@ label[for="filtre"] {
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 900px) {
     .vehicules-section {
         display: block; 
         text-align: center; 
