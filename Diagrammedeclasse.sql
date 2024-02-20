@@ -25,9 +25,7 @@ CREATE TABLE opinions (
   id integer PRIMARY KEY,
    nom VARCHAR(50),
   commentaire TEXT,
-  note INT,
-  utilisateur_id INT,
-  FOREIGN KEY (utilisateur_id) REFERENCES utilisateurs(id)
+  note INT
 );
 
 CREATE TABLE schedules (
@@ -42,7 +40,7 @@ CREATE TABLE schedules (
 CREATE TABLE services (
   id integer PRIMARY KEY,
   nom VARCHAR(100),
-  descriptions TEXT(100),
+  descriptions TEXT(100)
 );
 
 CREATE TABLE images (
